@@ -105,4 +105,4 @@ Modify **`base-url` in `api.cljs`**if needed.
 
 ---
 
-### **Built with ❤️ using ClojureScript & Reagent **
+### **Built with ❤️ using ClojureScript & Reagent**

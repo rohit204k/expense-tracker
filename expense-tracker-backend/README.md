@@ -108,4 +108,4 @@ uvicorn main:app --reload
 
 ---
 
-### **Built with ❤️ using FastAPI & MongoDB **
+### **Built with ❤️ using FastAPI & MongoDB**
