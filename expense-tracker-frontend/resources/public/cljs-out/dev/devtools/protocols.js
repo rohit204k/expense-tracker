@@ -28,7 +28,7 @@ devtools.protocols.ISurrogate = function(){};
  */
 devtools.protocols.IFormat = function(){};
 
-var devtools$protocols$IFormat$_header$dyn_12807 = (function (value){
+var devtools$protocols$IFormat$_header$dyn_15446 = (function (value){
 var x__5350__auto__ = (((value == null))?null:value);
 var m__5351__auto__ = (devtools.protocols._header[goog.typeOf(x__5350__auto__)]);
 if((!((m__5351__auto__ == null)))){
@@ -46,11 +46,11 @@ devtools.protocols._header = (function devtools$protocols$_header(value){
 if((((!((value == null)))) && ((!((value.devtools$protocols$IFormat$_header$arity$1 == null)))))){
 return value.devtools$protocols$IFormat$_header$arity$1(value);
 } else {
-return devtools$protocols$IFormat$_header$dyn_12807.call(null,value);
+return devtools$protocols$IFormat$_header$dyn_15446.call(null,value);
 }
 });
 
-var devtools$protocols$IFormat$_has_body$dyn_12808 = (function (value){
+var devtools$protocols$IFormat$_has_body$dyn_15447 = (function (value){
 var x__5350__auto__ = (((value == null))?null:value);
 var m__5351__auto__ = (devtools.protocols._has_body[goog.typeOf(x__5350__auto__)]);
 if((!((m__5351__auto__ == null)))){
@@ -68,11 +68,11 @@ devtools.protocols._has_body = (function devtools$protocols$_has_body(value){
 if((((!((value == null)))) && ((!((value.devtools$protocols$IFormat$_has_body$arity$1 == null)))))){
 return value.devtools$protocols$IFormat$_has_body$arity$1(value);
 } else {
-return devtools$protocols$IFormat$_has_body$dyn_12808.call(null,value);
+return devtools$protocols$IFormat$_has_body$dyn_15447.call(null,value);
 }
 });
 
-var devtools$protocols$IFormat$_body$dyn_12809 = (function (value){
+var devtools$protocols$IFormat$_body$dyn_15448 = (function (value){
 var x__5350__auto__ = (((value == null))?null:value);
 var m__5351__auto__ = (devtools.protocols._body[goog.typeOf(x__5350__auto__)]);
 if((!((m__5351__auto__ == null)))){
@@ -90,7 +90,7 @@ devtools.protocols._body = (function devtools$protocols$_body(value){
 if((((!((value == null)))) && ((!((value.devtools$protocols$IFormat$_body$arity$1 == null)))))){
 return value.devtools$protocols$IFormat$_body$arity$1(value);
 } else {
-return devtools$protocols$IFormat$_body$dyn_12809.call(null,value);
+return devtools$protocols$IFormat$_body$dyn_15448.call(null,value);
 }
 });
 

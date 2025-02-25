@@ -1,0 +1,70 @@
+/* ---------------- DASHBOARD STYLES ---------------- */
+
+.dashboard-container {
+    width: 600px;
+    max-width: 600px;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .logout-btn-container {
+    display: flex;
+    justify-content: right;
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #222;
+  }
+  
+  .dashboard-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .dashboard-buttons button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .dashboard-buttons button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Add unique colors for each section */
+  .add-expense-btn {
+    background: #28a745;
+    color: white;
+  }
+  
+  .expenses-btn {
+    background: #17a2b8;
+    color: white;
+  }
+  
+  .report-btn {
+    background: #ffc107;
+    color: black;
+  }
+  
+  .logout-btn {
+    width: 15%;
+    position: relative;
+    display: box;
+    background: #dc3545;
+    color: white;
+    margin-top: 1rem;
+  }
+  

@@ -10,8 +10,8 @@ expense_tracker_frontend.core.multiply = (function expense_tracker_frontend$core
 return (a * b);
 });
 expense_tracker_frontend.core.current_page = (function expense_tracker_frontend$core$current_page(){
-var G__16051 = new cljs.core.Keyword(null,"page","page",849072397).cljs$core$IFn$_invoke$arity$1(cljs.core.deref.call(null,expense_tracker_frontend.state.app_state));
-switch (G__16051) {
+var G__15035 = new cljs.core.Keyword(null,"page","page",849072397).cljs$core$IFn$_invoke$arity$1(cljs.core.deref.call(null,expense_tracker_frontend.state.app_state));
+switch (G__15035) {
 case "login":
 return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [expense_tracker_frontend.pages.auth.login_page], null);
 

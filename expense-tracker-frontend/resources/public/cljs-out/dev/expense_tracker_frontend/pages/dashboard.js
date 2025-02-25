@@ -21,8 +21,8 @@ return expense_tracker_frontend.api.fetch_expenses.call(null);
 cljs.core.swap_BANG_.call(null,expense_tracker_frontend.state.app_state,cljs.core.assoc,new cljs.core.Keyword(null,"dashboard-page","dashboard-page",1953346747),"report");
 
 return expense_tracker_frontend.api.fetch_report.call(null,expense_tracker_frontend.pages.report.toggle_chart_refresh);
-})], null),"Monthly Report"], null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),(function (){var G__16047 = cljs.core.deref.call(null,sub_page);
-switch (G__16047) {
+})], null),"Monthly Report"], null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),(function (){var G__12223 = cljs.core.deref.call(null,sub_page);
+switch (G__12223) {
 case "add-expense":
 return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [expense_tracker_frontend.pages.expenses.add_expense_page], null);
 
