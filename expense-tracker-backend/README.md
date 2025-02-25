@@ -1,17 +1,17 @@
-# 🚀 Expense Tracker Backend
+# Expense Tracker Backend
 
 A FastAPI-powered backend for an expense tracker application, supporting **user authentication, expense management, and monthly reports**.
 
-## 📌 Features
-✅ **User Authentication** (Register & Login with JWT)  
-✅ **Expense Management** (Add & Retrieve Expenses)  
-✅ **Expense Reports** (Monthly Debit Split, Credit/Debit Trends)  
-✅ **MongoDB Database** for persistence  
-✅ **CORS Support** for frontend integration  
+## Features
+**User Authentication** (Register & Login with JWT)  
+**Expense Management** (Add & Retrieve Expenses)  
+**Expense Reports** (Monthly Debit Split, Credit/Debit Trends)  
+**MongoDB Database** for persistence  
+**CORS Support** for frontend integration  
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 ```
 expense_tracker_backend/
 │── main.py                   # Entry point for FastAPI
@@ -34,65 +34,65 @@ expense_tracker_backend/
 
 ---
 
-## 🔧 Setup & Installation
+## Setup & Installation
 
-### **1️⃣ Clone the Repository**
+### ** Clone the Repository**
 ```sh
 git clone https://github.com/rohit204k/expense-tracker.git
 cd expense-tracker-backend
 ```
 
-### **2️⃣ Create a Virtual Environment (Optional but Recommended)**
+### ** Create a Virtual Environment (Optional but Recommended)**
 ```sh
 python -m venv .venv
 source venv/bin/activate  # On Mac/Linux
 venv\Scripts\activate     # On Windows
 ```
 
-### **3️⃣ Install Dependencies**
+### ** Install Dependencies**
 ```sh
 pip install -r requirements.txt
 ```
 
-### **4️⃣ Set Up Environment Variables**
-📍 **Create a `.env` file** inside the project root:  
+### ** Set Up Environment Variables**
+**Create a `.env` file** inside the project root:  
 ```sh
 touch .env
 ```
-📍 **Add the following to `.env`:**
+**Add the following to `.env`:**
 ```sh
 SECRET_KEY=your_secret_key_here
 MONGO_URI=mongodb+srv://your-mongo-connection-uri
 ```
 
-### **5️⃣ Run the FastAPI Server**
+### ** Run the FastAPI Server**
 ```sh
 uvicorn main:app --reload
 ```
 
 ---
 
-## 🚀 API Endpoints
-### **🟢 Authentication**
+## API Endpoints
+### ** Authentication**
 | Method | Endpoint       | Description          | Payload |
 |--------|---------------|----------------------|---------|
 | POST   | `/register`   | Register a user      | `{ "username": "test", "password": "pass123" }` |
 | POST   | `/login`      | Login & get JWT      | `{ "username": "test", "password": "pass123" }` |
 
-### **🟠 Expense Management**
+### ** Expense Management**
 | Method | Endpoint      | Description              | Headers | Payload |
 |--------|--------------|--------------------------|---------|---------|
 | POST   | `/expense`   | Add an expense           | `Authorization: Bearer <token>` | `{ "description": "Food", "amount": 50, "type": "Debit", "subtype": "Groceries", "date": "2025-02-01" }` |
 | GET    | `/expenses`  | Get current month's expenses | `Authorization: Bearer <token>` | - |
 
-### **🔵 Reports**
+### ** Reports**
 | Method | Endpoint   | Description              | Headers | Query Params |
 |--------|-----------|--------------------------|---------|--------------|
 | GET    | `/report` | Get Monthly Report       | `Authorization: Bearer <token>` | `year=2025&month=2` |
 
 ---
 
-## 🎯 Project Highlights
+## Project Highlights
 - **JWT-Based Authentication**
 - **MongoDB Aggregations for Reports**
 - **Modularized Codebase for Scalability**
@@ -100,22 +100,12 @@ uvicorn main:app --reload
 
 ---
 
-## 🛠️ Future Improvements
-- ✅ Add Expense **Categories & Budgets**
-- ✅ Support **Recurring Transactions**
-- ✅ Implement **Email Verification for Users**
-- ✅ Deploy to **AWS/GCP**
+## Future Improvements
+- Add Expense **Categories & Budgets**
+- Support **Recurring Transactions**
+- Implement **Email Verification for Users**
+- Deploy to **AWS/GCP**
 
 ---
 
-## 🤝 Contributing
-Contributions are welcome! Feel free to open an issue or submit a pull request. 
-
----
-
-## 📜 License
-MIT License. Feel free to modify and use this project.
-
----
-
-### **🔥 Built with ❤️ using FastAPI & MongoDB 🚀**
+### ** Built with ❤️ using FastAPI & MongoDB **
