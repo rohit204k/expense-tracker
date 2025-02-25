@@ -1,13 +1,13 @@
 # Expense Tracker Frontend
 
-A **ClojureScript + Reagent** frontend for an **Expense Tracker** application, designed to interact with a FastAPI backend.
+A **ClojureScript + Reagent**frontend for an **Expense Tracker**application, designed to interact with a FastAPI backend.
 
 ## Features
-**User Authentication** (Login, Register)  
-**Expense Management** (Add, View Expenses)  
-**Expense Reports** (Pie Chart & Line Chart for Transactions)  
-**JWT-Based Authorization**  
-**Styled UI with CSS**  
+**User Authentication**(Login, Register)  
+**Expense Management**(Add, View Expenses)  
+**Expense Reports**(Pie Chart & Line Chart for Transactions)  
+**JWT-Based Authorization** 
+**Styled UI with CSS** 
 
 ---
 
@@ -42,47 +42,47 @@ expense_tracker_frontend/
 
 ## Setup & Installation
 
-### ** Clone the Repository**
+### **Clone the Repository**
 ```sh
 git clone https://github.com/rohit204k/expense-tracker.git
 cd expense-tracker-frontend
 ```
 
-### ** Install Dependencies**
-Make sure **Leiningen** is installed (`lein --version` should return a version).
+### **Install Dependencies**
+Make sure **Leiningen**is installed (`lein --version` should return a version).
 ```sh
 lein deps
 ```
 
-### ** Start the Frontend Server**
+### **Start the Frontend Server**
 ```sh
 lein fig:build
 ```
 This will start the development server at **`http://localhost:9500`**.
 
-### ** Ensure the Backend is Running**
-The frontend expects the **FastAPI backend** to be running at:
+### **Ensure the Backend is Running**
+The frontend expects the **FastAPI backend**to be running at:
 ```
 http://localhost:8000
 ```
-Modify **`base-url` in `api.cljs`** if needed.
+Modify **`base-url` in `api.cljs`**if needed.
 
 ---
 
 ## API Interaction
-### ** Authentication**
+### **Authentication**
 | Method | Endpoint       | Description          | Payload |
 |--------|---------------|----------------------|---------|
 | POST   | `/register`   | Register a user      | `{ "username": "test", "password": "pass123" }` |
 | POST   | `/login`      | Login & get JWT      | `{ "username": "test", "password": "pass123" }` |
 
-### ** Expense Management**
+### **Expense Management**
 | Method | Endpoint      | Description              | Headers | Payload |
 |--------|--------------|--------------------------|---------|---------|
 | POST   | `/expense`   | Add an expense           | `Authorization: Bearer <token>` | `{ "description": "Food", "amount": 50, "type": "Debit", "subtype": "Groceries", "date": "2025-02-01" }` |
 | GET    | `/expenses`  | Get current month's expenses | `Authorization: Bearer <token>` | - |
 
-### ** Reports**
+### **Reports**
 | Method | Endpoint   | Description              | Headers | Query Params |
 |--------|-----------|--------------------------|---------|--------------|
 | GET    | `/report` | Get Monthly Report       | `Authorization: Bearer <token>` | `year=2025&month=2` |
@@ -90,10 +90,10 @@ Modify **`base-url` in `api.cljs`** if needed.
 ---
 
 ## UI Components
-- **Login & Registration Pages** → Styled with `auth.css`
-- **Dashboard** → Navigation & Logout (`dashboard.css`)
-- **Add Expense Page** → Form inputs & dropdowns (`expenses.css`)
-- **Report Page** → Uses **Chart.js** for Pie & Line charts (`report.css`)
+- **Login & Registration Pages**→ Styled with `auth.css`
+- **Dashboard**→ Navigation & Logout (`dashboard.css`)
+- **Add Expense Page**→ Form inputs & dropdowns (`expenses.css`)
+- **Report Page**→ Uses **Chart.js**for Pie & Line charts (`report.css`)
 
 ---
 
@@ -105,4 +105,4 @@ Modify **`base-url` in `api.cljs`** if needed.
 
 ---
 
-### ** Built with ❤️ using ClojureScript & Reagent **
+### **Built with ❤️ using ClojureScript & Reagent **

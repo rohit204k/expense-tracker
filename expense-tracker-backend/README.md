@@ -3,11 +3,11 @@
 A FastAPI-powered backend for an expense tracker application, supporting **user authentication, expense management, and monthly reports**.
 
 ## Features
-**User Authentication** (Register & Login with JWT)  
-**Expense Management** (Add & Retrieve Expenses)  
-**Expense Reports** (Monthly Debit Split, Credit/Debit Trends)  
-**MongoDB Database** for persistence  
-**CORS Support** for frontend integration  
+**User Authentication**(Register & Login with JWT)  
+**Expense Management**(Add & Retrieve Expenses)  
+**Expense Reports**(Monthly Debit Split, Credit/Debit Trends)  
+**MongoDB Database**for persistence  
+**CORS Support**for frontend integration  
 
 ---
 
@@ -36,26 +36,26 @@ expense_tracker_backend/
 
 ## Setup & Installation
 
-### ** Clone the Repository**
+### **Clone the Repository**
 ```sh
 git clone https://github.com/rohit204k/expense-tracker.git
 cd expense-tracker-backend
 ```
 
-### ** Create a Virtual Environment (Optional but Recommended)**
+### **Create a Virtual Environment (Optional but Recommended)**
 ```sh
 python -m venv .venv
 source venv/bin/activate  # On Mac/Linux
 venv\Scripts\activate     # On Windows
 ```
 
-### ** Install Dependencies**
+### **Install Dependencies**
 ```sh
 pip install -r requirements.txt
 ```
 
-### ** Set Up Environment Variables**
-**Create a `.env` file** inside the project root:  
+### **Set Up Environment Variables**
+**Create a `.env` file**inside the project root:  
 ```sh
 touch .env
 ```
@@ -65,7 +65,7 @@ SECRET_KEY=your_secret_key_here
 MONGO_URI=mongodb+srv://your-mongo-connection-uri
 ```
 
-### ** Run the FastAPI Server**
+### **Run the FastAPI Server**
 ```sh
 uvicorn main:app --reload
 ```
@@ -73,19 +73,19 @@ uvicorn main:app --reload
 ---
 
 ## API Endpoints
-### ** Authentication**
+### **Authentication**
 | Method | Endpoint       | Description          | Payload |
 |--------|---------------|----------------------|---------|
 | POST   | `/register`   | Register a user      | `{ "username": "test", "password": "pass123" }` |
 | POST   | `/login`      | Login & get JWT      | `{ "username": "test", "password": "pass123" }` |
 
-### ** Expense Management**
+### **Expense Management**
 | Method | Endpoint      | Description              | Headers | Payload |
 |--------|--------------|--------------------------|---------|---------|
 | POST   | `/expense`   | Add an expense           | `Authorization: Bearer <token>` | `{ "description": "Food", "amount": 50, "type": "Debit", "subtype": "Groceries", "date": "2025-02-01" }` |
 | GET    | `/expenses`  | Get current month's expenses | `Authorization: Bearer <token>` | - |
 
-### ** Reports**
+### **Reports**
 | Method | Endpoint   | Description              | Headers | Query Params |
 |--------|-----------|--------------------------|---------|--------------|
 | GET    | `/report` | Get Monthly Report       | `Authorization: Bearer <token>` | `year=2025&month=2` |
@@ -96,7 +96,7 @@ uvicorn main:app --reload
 - **JWT-Based Authentication**
 - **MongoDB Aggregations for Reports**
 - **Modularized Codebase for Scalability**
-- **FastAPI’s Auto-Generated API Docs** (`http://localhost:8000/docs`)
+- **FastAPI’s Auto-Generated API Docs**(`http://localhost:8000/docs`)
 
 ---
 
@@ -108,4 +108,4 @@ uvicorn main:app --reload
 
 ---
 
-### ** Built with ❤️ using FastAPI & MongoDB **
+### **Built with ❤️ using FastAPI & MongoDB **
