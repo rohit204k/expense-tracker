@@ -1,6 +1,6 @@
 # Expense Tracker Project
 
-This repository contains both the **frontend (ClojureScript + Reagent)**and **backend (FastAPI + MongoDB)**for an expense tracker application.
+This repository contains both the **frontend (ClojureScript + Reagent)** and **backend (FastAPI + MongoDB)** for an expense tracker application.
 
 ## Project Structure
 ```
